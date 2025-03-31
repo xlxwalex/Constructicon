@@ -143,8 +143,8 @@ function initMobileSidebar() {
 async function loadData() {
     try {
         const [constructionResponse, relationsResponse] = await Promise.all([
-            fetch('https://expic.xlxw.org/constructions.json'),
-            fetch('https://expic.xlxw.org/relations.json')
+            fetch('/data/constructions.json'),
+            fetch('/data/relations.json')
         ]);
 
         constructionData = await constructionResponse.json();
