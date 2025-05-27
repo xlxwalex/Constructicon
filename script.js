@@ -752,7 +752,7 @@ function updateSidebar() {
                 <td class="connection-name" title="${conn.nodeName}">${conn.nodeName}</td>
                 <td class="connection-relation">${conn.relation}</td>
                 <td class="connection-direction">
-                    ${conn.direction === 'bi-directional' ? '双向' : conn.isOutgoing ? '出向' : '入向'}
+                    ${conn.direction === 'bi-directional' ? 'Bi' : conn.isOutgoing ? 'Out' : 'In'}
                 </td>
             `;
             row.addEventListener('click', () => {

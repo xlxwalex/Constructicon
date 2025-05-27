@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>构式图谱可视化</title>
+    <title>Visualization of Constructicon</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.ico" />
@@ -16,11 +16,11 @@
         <div class="graph-area">
             <div class="search-container">
                 <div class="search-input-container">
-                    <input type="text" id="search-input" placeholder="搜索构式ID或名称...">
+                    <input type="text" id="search-input" placeholder="Search for Construction ID or Name...">
                     <div id="search-suggestions" class="search-suggestions"></div>
                 </div>
-                <button id="search-button">搜索</button>
-                <button id="random-button">随机</button>
+                <button id="search-button">Search</button>
+                <button id="random-button">Random</button>
             </div>
             <div class="graph-container" id="graph"></div>
         </div>
@@ -29,15 +29,15 @@
             <div class="sidebar-toggle" id="sidebar-toggle"></div>
             <div class="sidebar-content">
                 <div class="sidebar-section connections">
-                    <h3>连接节点</h3>
+                    <h3>Connected Nodes</h3>
                     <div class="connections-table-container">
                         <table class="connections-table" id="connections-table">
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>名称</th>
-                                    <th>关系</th>
-                                    <th>方向</th>
+                                    <th>Name</th>
+                                    <th>Relation</th>
+                                    <th>Direction</th>
                                 </tr>
                             </thead>
                             <tbody id="connections-list"></tbody>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="sidebar-section examples">
-                    <h3>实例化示例</h3>
+                    <h3>Examples</h3>
                     <div class="examples-list" id="examples-list"></div>
                 </div>
             </div>
